@@ -19,16 +19,10 @@ function fetchRandomCharacterImages() {
 }
 
 function getRandomCharacterImageUrl() {
-  const imageUrl = 'assets/Images/characters/';
+  const randomIndex = Math.floor(Math.random() * characters.length);
+  const character = characters[randomIndex];
 
-  // List all image filenames in the characters folder
-  const images = [
-    'Bocchi_1.jpg',
-    // Add more image filenames as needed
-  ];
-
-  const randomIndex = Math.floor(Math.random() * images.length);
-  return `${imageUrl}${images[randomIndex]}`;
+  return character.image;
 }
 
 // Example usage
