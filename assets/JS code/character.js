@@ -24,8 +24,8 @@ const characters = [
     rarity: 1,
   },
   {
-    name: "Reimi",
-    series: "Touhou",
+    name: "Sunflower girl",
+    series: "AI",
     image: "./assets/Images/characters/original_5.jpg",
     gender: "F",
     description: "This is the description of Character 1.",
@@ -64,7 +64,7 @@ const characters = [
     rarity: 1,
   },
   {
-    name: "Messy room messy life",
+    name: "Science lady",
     series: "Original AI",
     image: "./assets/Images/characters/original_3.jpg",
     gender: "F",
@@ -72,12 +72,6 @@ const characters = [
     rarity: 1,
   },
   {
-    name: "Messy room messy life",
-    series: "Original AI",
-    image: "./assets/Images/characters/original_3.jpg",
-    gender: "F",
-    description: "This is the description of Character 1.",
-    rarity: 1,
   },
   {
     name: "Crying girl",
@@ -96,6 +90,65 @@ const characters = [
     rarity: 1,
   },
 
+  {
+    name: "Egyptian themed",
+    series: "Original AI",
+    image: "./assets/Images/characters/original_6.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+
+  {
+    name: "Witch",
+    series: "Original AI",
+    image: "./assets/Images/characters/original_7.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+
+  {
+    name: "Gura",
+    series: "Original AI",
+    image: "./assets/Images/characters/Gura.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+
+  {
+    name: "Medea",
+    series: "Original AI",
+    image: "./assets/Images/characters/Medea.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+
+  {
+    name: "Medusa Casual",
+    series: "Original AI",
+    image: "./assets/Images/characters/Medusa_casual.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Nanachi",
+    series: "Made in Abyss",
+    image: "./assets/Images/characters/Nanchi.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+
+
+
+
+
+
+  
   
 
 
