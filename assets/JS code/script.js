@@ -1,10 +1,24 @@
-const summonButton = document.getElementById('summon-button');
+const summonButton1 = document.getElementById('summon-button-1');
+const summonButton10 = document.getElementById('summon-button-10');
 const characterContainer = document.getElementById('character-container');
 
-function fetchRandomCharacterImages() {
-  const numberOfImages = 10;
+function get1RandomCharacter() {
+  const characterCard = document.createElement('div');
+  characterCard.className = 'character-card';
 
-  for (let i = 0; i < numberOfImages; i++) {
+  const characterImage = document.createElement('img');
+  characterImage.className = 'character-image';
+  characterImage.src = getRandomCharacterImageUrl();
+  characterImage.alt = 'Character Image';
+
+  characterCard.appendChild(characterImage);
+  characterContainer.appendChild(characterCard);
+}
+
+function get10RandomCharacters() {
+  const numberOfCharacters = 10;
+
+  for (let i = 0; i < numberOfCharacters; i++) {
     const characterCard = document.createElement('div');
     characterCard.className = 'character-card';
 
@@ -25,5 +39,8 @@ function getRandomCharacterImageUrl() {
   return character.image;
 }
 
-// Example usage
-summonButton.addEventListener('click', fetchRandomCharacterImages);
+// Event listener for Summon 1 button
+summonButton1.addEventListener('click', get1RandomCharacter);
+
+// Event listener for Summon 10 button
+summonButton10.addEventListener('click', get10RandomCharacters);
