@@ -2,6 +2,22 @@ const summonButton1 = document.getElementById('summon-button-1');
 const summonButton10 = document.getElementById('summon-button-10');
 const characterContainer = document.getElementById('character-container');
 
+//Summon Animations 
+
+const summonAnimations = [
+  'FGO.mp4',
+  'Nikke.mp4',
+  // Add more animation file names as needed
+];
+
+
+
+
+
+
+
+//Function that fetches 1 Random Character
+
 function get1RandomCharacter() {
   const characterCard = document.createElement('div');
   characterCard.className = 'character-card';
@@ -14,6 +30,7 @@ function get1RandomCharacter() {
   characterCard.appendChild(characterImage);
   characterContainer.appendChild(characterCard);
 }
+//Function that fetches 10 Random Character
 
 function get10RandomCharacters() {
   const numberOfCharacters = 10;
