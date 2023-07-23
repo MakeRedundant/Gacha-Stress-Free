@@ -6,7 +6,15 @@
     width: 100vw;
     height: 100vh;
     object-fit: cover; /* Ensures the video covers the entire container */
-    z-index: 9999;
+    z-index: 999;
+  }
+
+  #skip-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 9999; /* Set the z-index to a higher value than the summon animation */
+    
   }
   
   #character-container {
