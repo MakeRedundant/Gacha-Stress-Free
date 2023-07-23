@@ -5,7 +5,7 @@ const characterContainer = document.getElementById('character-container');
 
 
 
-function playSummonAnimation() {
+function playSummonAnimation(numCharacters, charactersCallback) {
   const animationFile = getRandomSummonAnimation();
   const animationPath = `./assets/Summon/${animationFile}`;
   const summonAnimations = document.getElementById('summon-animation');
@@ -24,7 +24,7 @@ function playSummonAnimation() {
     document.getElementById('summon-button-1').style.display = 'block';
     document.getElementById('summon-button-10').style.display = 'block';
     document.querySelector('h1').style.display = 'block';
-    get10RandomCharacters();
+    charactersCallback(numCharacters); // Fetch the random characters
   });
 }
 

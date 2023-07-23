@@ -127,6 +127,22 @@ const characters = [
     description: "This is the description of Character 1.",
     rarity: 1,
   },
+  {
+    name: "Chiaki",
+    series: "Yuru Camp",
+    image: "./assets/Images/characters/Rarity 1/Chiaki.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Nadeshiko",
+    series: "Yuru Camp",
+    image: "./assets/Images/characters/Rarity 1/Nadeshiko.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
 
   {
     name: "Forest",
