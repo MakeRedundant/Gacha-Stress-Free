@@ -5,7 +5,6 @@ const characterContainer = document.getElementById('character-container');
 
 
 
-// Function to play the summon animation
 function playSummonAnimation() {
   const animationFile = getRandomSummonAnimation();
   const animationPath = `./assets/Summon/${animationFile}`;
@@ -13,6 +12,20 @@ function playSummonAnimation() {
   summonAnimations.src = animationPath;
   summonAnimations.style.display = 'block'; // Show the video element
   summonAnimations.play();
+
+  // Hide buttons and h1 element during the summon animation
+  document.getElementById('summon-button-1').style.display = 'none';
+  document.getElementById('summon-button-10').style.display = 'none';
+  document.querySelector('h1').style.display = 'none';
+
+  summonAnimations.addEventListener('ended', function() {
+    summonAnimations.style.display = 'none'; // Hide the summon animation
+    // Show buttons and h1 element after the summon animation finishes
+    document.getElementById('summon-button-1').style.display = 'block';
+    document.getElementById('summon-button-10').style.display = 'block';
+    document.querySelector('h1').style.display = 'block';
+    get10RandomCharacters();
+  });
 }
 
 
@@ -57,18 +70,31 @@ function getRandomCharacterImage() {
   return character.image;
 }
 
+// // Event listener for Summon 1 button
+// summonButton1.addEventListener('click', () => {
+//   // Play the summon animation
+//   playSummonAnimation();
+//   // Get 1 random character
+//   get1RandomCharacter();
+// });
+
+// // Event listener for Summon 10 button
+// summonButton10.addEventListener('click', () => {
+//   // Play the summon animation
+//   playSummonAnimation();
+//   // Get 10 random characters
+//   get10RandomCharacters();
+// });
+
+
 // Event listener for Summon 1 button
 summonButton1.addEventListener('click', () => {
-  // Play the summon animation
-  playSummonAnimation();
-  // Get 1 random character
-  get1RandomCharacter();
+  // Play the summon animation and get 1 random character
+  playSummonAnimation(1, get1RandomCharacter);
 });
 
 // Event listener for Summon 10 button
 summonButton10.addEventListener('click', () => {
-  // Play the summon animation
-  playSummonAnimation();
-  // Get 10 random characters
-  get10RandomCharacters();
+  // Play the summon animation and get 10 random characters
+  playSummonAnimation(10, get10RandomCharacters);
 });

@@ -1,10 +1,29 @@
 #summon-animation {
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
     height: 100vh;
+    object-fit: cover; /* Ensures the video covers the entire container */
     z-index: 9999;
   }
   
+  #character-container {
+    position: relative;
+    z-index: -1;
+  }
+
+  #summon-container {
+    
+    z-index: -99;
+  }
+
+
+  /* Media query for smaller screens (e.g., mobile devices) */
+@media (max-width: 768px) {
+    #summon-animation {
+      width: 100vw; /* Use 'vw' units to cover the full viewport width */
+      height: 100vh; /* Use 'vh' units to cover the full viewport height */
+    }
+  }

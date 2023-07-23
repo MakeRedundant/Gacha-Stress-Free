@@ -120,6 +120,15 @@ const characters = [
     rarity: 1,
   },
   {
+    name: "Asuka",
+    series: "Evangelion",
+    image: "./assets/Images/characters/Rarity 1/Asuka.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+
+  {
     name: "Forest",
     series: "Original AI",
     image: "./assets/Images/characters/Rarity 1/original_1.jpg",
