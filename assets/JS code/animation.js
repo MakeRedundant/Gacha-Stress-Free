@@ -4,7 +4,12 @@
 const summonAnimations = [
     'FGO.mp4',
     'Nikke.mp4',
-    // Add more animation file names as needed
+    'Blue Archive.mp4',
+    'Genshin Impact.mp4',
+    'Grand Blue Fantasy.mp4',
+    'Honkai Star Rail.mp4',
+
+    // Add more animations
   ];
   
   // Function to get a random summon animation file name
