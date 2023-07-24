@@ -11,6 +11,7 @@
 
   #skip-button {
     position: absolute;
+    display: none;
     top: 10px;
     right: 10px;
     z-index: 9999; /* Set the z-index to a higher value than the summon animation */
