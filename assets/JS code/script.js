@@ -4,53 +4,6 @@ const summonButton10 = document.getElementById('summon-button-10');
 const characterContainer = document.getElementById('character-container');
 const skipButton = document.getElementById('skip-button'); // Declare the skip button here
 
-
-
-// function playSummonAnimation(numCharacters, charactersCallback) {
-//   const animationFile = getRandomSummonAnimation();
-//   const animationPath = `./assets/Summon/${animationFile}`;
-//   const summonAnimations = document.getElementById('summon-animation');
-//   summonAnimations.src = animationPath;
-//   summonAnimations.style.display = 'block'; // Show the video element
-//   summonAnimations.play();
-
-//   summonAnimations.addEventListener('play', () => {
-//     // Show the "Skip" button during the summon animation
-//     const skipButton = document.getElementById('skip-button');
-//     skipButton.style.display = 'block';
-//   });
-
-//   // Function to handle skip functionality
-//   function skipAnimation() {
-//     summonAnimations.pause(); // Pause the animation
-//     summonAnimations.style.display = 'none'; // Hide the summon animation
-//     skipButton.style.display = 'none'; // Hide the "Skip" button
-//     // Show buttons and h1 element after the summon animation finishes
-//     document.getElementById('summon-button-1').style.display = 'block';
-//     document.getElementById('summon-button-10').style.display = 'block';
-//     document.querySelector('h1').style.display = 'block';
-//     charactersCallback(numCharacters); // Fetch the random characters
-//     // Remove the event listener after it's used
-//     skipButton.removeEventListener('click', skipAnimation);
-//   }
-
-//   // Event listener for the "Skip" button
-//   const skipButton = document.getElementById('skip-button');
-//   skipButton.addEventListener('click', skipAnimation);
-
-//   summonAnimations.addEventListener('ended', function() {
-//     // The animation finished playing, remove the event listener
-//     skipButton.removeEventListener('click', skipAnimation);
-//     summonAnimations.style.display = 'none'; // Hide the summon animation
-//     skipButton.style.display = 'none'; // Hide the "Skip" button
-//     // Show buttons and h1 element after the summon animation finishes
-//     document.getElementById('summon-button-1').style.display = 'block';
-//     document.getElementById('summon-button-10').style.display = 'block';
-//     document.querySelector('h1').style.display = 'block';
-//     charactersCallback(numCharacters); // Fetch the random characters
-//   });
-// }
-
 // Function to play the summon animation
 function playSummonAnimation(numCharacters, charactersCallback) {
   const animationFile = getRandomSummonAnimation();
@@ -134,22 +87,6 @@ function getRandomCharacterImage() {
 
   return character.image;
 }
-
-// // Event listener for Summon 1 button
-// summonButton1.addEventListener('click', () => {
-//   // Play the summon animation
-//   playSummonAnimation();
-//   // Get 1 random character
-//   get1RandomCharacter();
-// });
-
-// // Event listener for Summon 10 button
-// summonButton10.addEventListener('click', () => {
-//   // Play the summon animation
-//   playSummonAnimation();
-//   // Get 10 random characters
-//   get10RandomCharacters();
-// });
 
 
 // Event listener for Summon 1 button
