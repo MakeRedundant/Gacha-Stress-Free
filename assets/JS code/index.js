@@ -4,9 +4,9 @@
 // import history from './history.js';
 // import resultsPage from './resultsPage.js';
 // import Moneyspent from './moneySpent.js';
-import characters from './character.js';
+// import characters from './character.js';
 import { summonAnimations, getRandomSummonAnimation } from './animation.js';
-import { get1RandomCharacter, get10RandomCharacters } from './character.js';
+import characters, { get1RandomCharacter, get10RandomCharacters} from './character.js';
 
 const summonButton1 = document.getElementById('summon-button-1');
 const summonButton10 = document.getElementById('summon-button-10');

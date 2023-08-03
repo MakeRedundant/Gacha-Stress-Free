@@ -223,6 +223,9 @@ const characters = [
   // Add more character objects as needed
 ];
 
+const characterContainer = document.getElementById('character-container');
+
+
 //Function that fetches 1 Random Character
 
 function get1RandomCharacter() {
@@ -263,5 +266,5 @@ function getRandomCharacterImage() {
   return character.image;
 }
 
-export { get1RandomCharacter, get10RandomCharacters, getRandomCharacterImage };
+export { get1RandomCharacter, get10RandomCharacters, getRandomCharacterImage, };
 export default characters;
