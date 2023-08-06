@@ -9,7 +9,7 @@
 import { get1RandomCharacter, get10RandomCharacters, getRandomCharacterImage } from './character.js';
 // import { summonAnimations, playSummonAnimation, getRandomSummonAnimation } from './animation.js';
 import { playSummonAnimation } from './animation.js';
-
+// import { saveSummonedCharacters, displaySummonedCharacters } from './history.js';
 
 const summonButton1 = document.getElementById('summon-button-1');
 const summonButton10 = document.getElementById('summon-button-10');

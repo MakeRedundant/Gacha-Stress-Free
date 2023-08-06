@@ -362,10 +362,6 @@ const characters = [
     description: "This is the description of Character 1.",
     rarity: 3,
   },
-
-
-
-
   {
     name: "Forest",
     series: "Original AI",
@@ -495,6 +491,23 @@ function getRandomCharacterImage() {
   return selectedCharacter.image;
 }
 
+// Function to add a character to the character history in local storage
+function addToCharacterHistory(character) {
+  const characterHistory = getCharacterHistory();
+  characterHistory.push(character);
+  localStorage.setItem('characterHistory', JSON.stringify(characterHistory));
+}
+
+// Function to get the character history from local storage
+function getCharacterHistory() {
+  const characterHistoryJSON = localStorage.getItem('characterHistory');
+  return characterHistoryJSON ? JSON.parse(characterHistoryJSON) : [];
+}
+
+
+
+
+export { addToCharacterHistory, getCharacterHistory};
 
 export { get1RandomCharacter, get10RandomCharacters, getRandomCharacterImage };
 export default characters;
