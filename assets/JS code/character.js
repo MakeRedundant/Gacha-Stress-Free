@@ -104,6 +104,47 @@ const characters = [
     rarity: 1,
   },
   {
+    name: "Saber (food)",
+    series: "Fate Grand Order",
+    image: "./assets/Images/characters/Rarity 1/Saber_food.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Sakura Matou",
+    series: "Fate Grand Order",
+    image: "./assets/Images/characters/Rarity 1/Sakura_Matou.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Scathach",
+    series: "Fate Grand Order",
+    image: "./assets/Images/characters/Rarity 1/Scathach.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Quetzalcoatl",
+    series: "Fate Grand Order",
+    image: "./assets/Images/characters/Rarity 1/Quetzalcoatl.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Historia",
+    series: "Attack on Titan",
+    image: "./assets/Images/characters/Rarity 1/Historia.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+
+  {
     name: "Nanachi",
     series: "Made in Abyss",
     image: "./assets/Images/characters/Rarity 1/Nanchi.jpg",
@@ -143,6 +184,14 @@ const characters = [
     description: "This is the description of Character 1.",
     rarity: 1,
   },
+  {
+    name: "Hoshino",
+    series: "Blue Archive",
+    image: "./assets/Images/characters/Rarity 1/Hoshino.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  }, 
 
   {
     name: "Forest",
