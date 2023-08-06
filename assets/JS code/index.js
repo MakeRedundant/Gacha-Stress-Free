@@ -6,7 +6,7 @@
 // import Moneyspent from './moneySpent.js';
 // import characters from './character.js';
 
-import characters, { get1RandomCharacter, get10RandomCharacters} from './character.js';
+import { get1RandomCharacter, get10RandomCharacters, getRandomCharacterImage } from './character.js';
 // import { summonAnimations, playSummonAnimation, getRandomSummonAnimation } from './animation.js';
 import { playSummonAnimation } from './animation.js';
 

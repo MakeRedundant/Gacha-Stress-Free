@@ -8,11 +8,20 @@ const characters = [
     rarity: 1,
   },
   {
+    name: "Bocchi ",
+    series: "Bocchi the Rock, ぼっち・ざ・ろっく！",
+    image: "./assets/Images/characters/Rarity 2/Bocchi_2.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 2,
+  },
+  {
     name: "Yumeko Jabami ",
     series: "Kakegurui: Compulsive Gambler, 賭ケグルイ",
     image: "./assets/Images/characters/Rarity 1/Yumeko_1.jpg",
     gender: "F",
-    description: "A girl who transfers into Hyakkaou Private Academy. She might look like an attractive young lady, but she is actually a Kakegurui, someone who finds pleasure in taking risks.",
+    description:
+      "A girl who transfers into Hyakkaou Private Academy. She might look like an attractive young lady, but she is actually a Kakegurui, someone who finds pleasure in taking risks.",
     rarity: 1,
   },
   {
@@ -136,6 +145,23 @@ const characters = [
     rarity: 1,
   },
   {
+    name: "Morgan",
+    series: "Fate Grand Order",
+    image: "./assets/Images/characters/Rarity 1/Morgan.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Mordred_1",
+    series: "Fate Grand Order",
+    image: "./assets/Images/characters/Rarity 1/Mordred_1.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+
+  {
     name: "Historia",
     series: "Attack on Titan",
     image: "./assets/Images/characters/Rarity 1/Historia.jpg",
@@ -143,7 +169,47 @@ const characters = [
     description: "This is the description of Character 1.",
     rarity: 1,
   },
+  {
+    name: "Saber (Chibi)",
+    series: "Fate Grand Order",
+    image: "./assets/Images/characters/Rarity 1/Saber_chibi.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Cynthia_chibi",
+    series: "Pokemon",
+    image: "./assets/Images/characters/Rarity 1/Cynthia_chibi.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
 
+  {
+    name: "Rena Hyugga",
+    series: "Higurashi",
+    image: "./assets/Images/characters/Rarity 1/Rena.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Rena Hyugga (Chibi)",
+    series: "Higurashi",
+    image: "./assets/Images/characters/Rarity 1/Rena_chibi.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Satoko (chibi)",
+    series: "Higurashi",
+    image: "./assets/Images/characters/Rarity 1/Satoko.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
   {
     name: "Nanachi",
     series: "Made in Abyss",
@@ -151,6 +217,30 @@ const characters = [
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 1,
+  },
+  {
+    name: "Inoue Takina",
+    series: "Lycoris Recoil",
+    image: "./assets/Images/characters/Rarity 1/Inoue_Takina.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Chisato",
+    series: "Lycoris Recoil",
+    image: "./assets/Images/characters/Rarity 1/Chisato.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Chisato",
+    series: "Lycoris Recoil",
+    image: "./assets/Images/characters/Rarity 2/Chisato_1.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 2,
   },
   {
     name: "Rei",
@@ -191,7 +281,33 @@ const characters = [
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 1,
-  }, 
+  },
+  {
+    name: "Ranni",
+    series: "Elden Ring",
+    image: "./assets/Images/characters/Rarity 1/Ranni.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 3,
+  },
+  {
+    name: "Beatrice",
+    series: "Umineko",
+    image: "./assets/Images/characters/Rarity 1/Beatrice.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 3,
+  },
+  {
+    name: "Ai Hoshino",
+    series: "Koi blah blah",
+    image: "./assets/Images/characters/Rarity 1/AI_Hoshino.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 3,
+  },
+
+
 
   {
     name: "Forest",
@@ -209,82 +325,70 @@ const characters = [
     description: "This is the description of Character 1.",
     rarity: 1,
   },
-   {
-  name: "Science",
-  series: "Original AI",
-  image: "./assets/Images/characters/Rarity 1/original_3.jpg",
-  gender: "F",
-  description: "This is the description of Character 1.",
-  rarity: 1,
-},
   {
-  name: "Tears",
-  series: "Original AI",
-  image: "./assets/Images/characters/Rarity 1/original_4.jpg",
-  gender: "F",
-  description: "This is the description of Character 1.",
-  rarity: 1,
-},
-{
-  name: "Sunflower",
-  series: "AI",
-  image: "./assets/Images/characters/Rarity 1/original_5.jpg",
-  gender: "F",
-  description: "This is the description of Character 1.",
-  rarity: 1,
-},
-{
-  name: "Pharoah",
-  series: "Original AI",
-  image: "./assets/Images/characters/Rarity 1/original_6.jpg",
-  gender: "F",
-  description: "This is the description of Character 1.",
-  rarity: 1,
-},
-{
-  name: "Witch",
-  series: "Original AI",
-  image: "./assets/Images/characters/Rarity 1/original_7.jpg",
-  gender: "F",
-  description: "This is the description of Character 1.",
-  rarity: 1,
-},
-{
-  name: "Kimino",
-  series: "Original AI",
-  image: "./assets/Images/characters/Rarity 1/original_8.jpg",
-  gender: "F",
-  description: "This is the description of Character 1.",
-  rarity: 1,
-},
-
-
-
-
-
-
-
-  
-  
-
-
+    name: "Science",
+    series: "Original AI",
+    image: "./assets/Images/characters/Rarity 1/original_3.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Tears",
+    series: "Original AI",
+    image: "./assets/Images/characters/Rarity 1/original_4.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Sunflower",
+    series: "AI",
+    image: "./assets/Images/characters/Rarity 1/original_5.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Pharoah",
+    series: "Original AI",
+    image: "./assets/Images/characters/Rarity 1/original_6.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Witch",
+    series: "Original AI",
+    image: "./assets/Images/characters/Rarity 1/original_7.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Kimino",
+    series: "Original AI",
+    image: "./assets/Images/characters/Rarity 1/original_8.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
 
   // Add more character objects as needed
 ];
 
-const characterContainer = document.getElementById('character-container');
-
+const characterContainer = document.getElementById("character-container");
 
 //Function that fetches 1 Random Character
 
 function get1RandomCharacter() {
-  const characterCard = document.createElement('div');
-  characterCard.className = 'character-card';
+  const characterCard = document.createElement("div");
+  characterCard.className = "character-card";
 
-  const characterImage = document.createElement('img');
-  characterImage.className = 'character-image';
+  const characterImage = document.createElement("img");
+  characterImage.className = "character-image";
   characterImage.src = getRandomCharacterImage();
-  characterImage.alt = 'Character Image';
+  characterImage.alt = "Character Image";
 
   characterCard.appendChild(characterImage);
   characterContainer.appendChild(characterCard);
@@ -295,13 +399,13 @@ function get10RandomCharacters() {
   const numberOfCharacters = 10;
 
   for (let i = 0; i < numberOfCharacters; i++) {
-    const characterCard = document.createElement('div');
-    characterCard.className = 'character-card';
+    const characterCard = document.createElement("div");
+    characterCard.className = "character-card";
 
-    const characterImage = document.createElement('img');
-    characterImage.className = 'character-image';
+    const characterImage = document.createElement("img");
+    characterImage.className = "character-image";
     characterImage.src = getRandomCharacterImage();
-    characterImage.alt = 'Character Image';
+    characterImage.alt = "Character Image";
 
     characterCard.appendChild(characterImage);
     characterContainer.appendChild(characterCard);
@@ -309,11 +413,49 @@ function get10RandomCharacters() {
 }
 
 function getRandomCharacterImage() {
-  const randomIndex = Math.floor(Math.random() * characters.length);
-  const character = characters[randomIndex];
+  let randomValue = Math.random();
 
-  return character.image;
+  const rarityProbabilities = [
+    { rarity: 1, probability: 0.6 },
+    { rarity: 2, probability: 0.31 },
+    { rarity: 3, probability: 0.09 }
+  ];
+
+  let selectedRarity = 1;
+
+  for (const rarityData of rarityProbabilities) {
+    if (randomValue <= rarityData.probability) {
+      selectedRarity = rarityData.rarity;
+      break;
+    } else {
+      randomValue -= rarityData.probability;
+    }
+  }
+
+  // Filter characters based on selected rarity
+  const charactersOfSelectedRarity = characters.filter(character => character.rarity === selectedRarity);
+
+  // If no characters found for selected rarity, handle this case as needed
+  if (charactersOfSelectedRarity.length === 0) {
+    console.error(`No characters found for rarity ${selectedRarity}`);
+    return ""; // Return a default image URL or handle this case
+  }
+
+  // Get a random character image from the selected rarity
+  const randomIndex = Math.floor(Math.random() * charactersOfSelectedRarity.length);
+  const selectedCharacter = charactersOfSelectedRarity[randomIndex];
+
+  // If selected character or image is undefined, handle this case as needed
+  if (!selectedCharacter || !selectedCharacter.image) {
+    console.error("Selected character or image is undefined");
+    return ""; // Return a default image URL or handle this case
+  }
+
+  return selectedCharacter.image;
 }
 
-export { get1RandomCharacter, get10RandomCharacters, getRandomCharacterImage, };
+
+
+
+export { get1RandomCharacter, get10RandomCharacters, getRandomCharacterImage };
 export default characters;
