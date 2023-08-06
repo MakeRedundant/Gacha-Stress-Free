@@ -160,15 +160,6 @@ const characters = [
     description: "This is the description of Character 1.",
     rarity: 1,
   },
-
-  {
-    name: "Historia",
-    series: "Attack on Titan",
-    image: "./assets/Images/characters/Rarity 1/Historia.jpg",
-    gender: "F",
-    description: "This is the description of Character 1.",
-    rarity: 1,
-  },
   {
     name: "Saber (Chibi)",
     series: "Fate Grand Order",
@@ -177,6 +168,39 @@ const characters = [
     description: "This is the description of Character 1.",
     rarity: 1,
   },
+  {
+    name: "Melt",
+    series: "Fate Grand Order",
+    image: "./assets/Images/characters/Rarity 3/Melt.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 3,
+  },
+  {
+    name: "Mash (Waltz in the MOONLIGHT/LOSTROOM) ",
+    series: "Fate Grand Order",
+    image: "./assets/Images/characters/Rarity 3/Mash_dress.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 3,
+  },
+  {
+    name: " Ishtar + Eresh ",
+    series: "Fate Grand Order",
+    image: "./assets/Images/characters/Rarity 3/Ishtar_Eresh.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 3,
+  },
+  {
+    name: "Historia",
+    series: "Attack on Titan",
+    image: "./assets/Images/characters/Rarity 1/Historia.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+
   {
     name: "Cynthia_chibi",
     series: "Pokemon",
@@ -275,6 +299,14 @@ const characters = [
     rarity: 1,
   },
   {
+    name: "Kaguya + Chika",
+    series: "Love is war",
+    image: "./assets/Images/characters/Rarity 3/Kaguya_Chika.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 3,
+  }, 
+  {
     name: "Hoshino",
     series: "Blue Archive",
     image: "./assets/Images/characters/Rarity 1/Hoshino.jpg",
@@ -283,9 +315,25 @@ const characters = [
     rarity: 1,
   },
   {
+    name: "Melina",
+    series: "Elden Ring",
+    image: "./assets/Images/characters/Rarity 1/Melina.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Melina (suit)",
+    series: "Elden Ring",
+    image: "./assets/Images/characters/Rarity 2/Melina_suit.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 2,
+  },
+  {
     name: "Ranni",
     series: "Elden Ring",
-    image: "./assets/Images/characters/Rarity 1/Ranni.jpg",
+    image: "./assets/Images/characters/Rarity 3/Ranni.jpg",
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 3,
@@ -293,7 +341,7 @@ const characters = [
   {
     name: "Beatrice",
     series: "Umineko",
-    image: "./assets/Images/characters/Rarity 1/Beatrice.jpg",
+    image: "./assets/Images/characters/Rarity 3/Beatrice.jpg",
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 3,
@@ -301,11 +349,20 @@ const characters = [
   {
     name: "Ai Hoshino",
     series: "Koi blah blah",
-    image: "./assets/Images/characters/Rarity 1/AI_Hoshino.jpg",
+    image: "./assets/Images/characters/Rarity 3/AI_Hoshino.jpg",
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 3,
   },
+  {
+    name: "Scarlet",
+    series: "Nikke",
+    image: "./assets/Images/characters/Rarity 3/Scarlet.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 3,
+  },
+
 
 
 
@@ -413,48 +470,30 @@ function get10RandomCharacters() {
 }
 
 function getRandomCharacterImage() {
-  let randomValue = Math.random();
-
-  const rarityProbabilities = [
-    { rarity: 1, probability: 0.6 },
-    { rarity: 2, probability: 0.31 },
-    { rarity: 3, probability: 0.09 }
-  ];
-
+  const randomValue = Math.random();
   let selectedRarity = 1;
 
-  for (const rarityData of rarityProbabilities) {
-    if (randomValue <= rarityData.probability) {
-      selectedRarity = rarityData.rarity;
-      break;
-    } else {
-      randomValue -= rarityData.probability;
-    }
+  if (randomValue <= 0.6) {
+    selectedRarity = 1; // 60% chance
+  } else if (randomValue <= 0.91) {
+    selectedRarity = 2; // 31% chance
+  } else {
+    selectedRarity = 3; // 9% chance
   }
 
-  // Filter characters based on selected rarity
   const charactersOfSelectedRarity = characters.filter(character => character.rarity === selectedRarity);
 
-  // If no characters found for selected rarity, handle this case as needed
-  if (charactersOfSelectedRarity.length === 0) {
-    console.error(`No characters found for rarity ${selectedRarity}`);
-    return ""; // Return a default image URL or handle this case
-  }
-
-  // Get a random character image from the selected rarity
   const randomIndex = Math.floor(Math.random() * charactersOfSelectedRarity.length);
   const selectedCharacter = charactersOfSelectedRarity[randomIndex];
 
-  // If selected character or image is undefined, handle this case as needed
   if (!selectedCharacter || !selectedCharacter.image) {
-    console.error("Selected character or image is undefined");
-    return ""; // Return a default image URL or handle this case
+    console.log("Selected character or image is undefined");
+    return ""; 
   }
 
+  console.log(`Summoned character: ${selectedCharacter.name} (Rarity ${selectedCharacter.rarity})`);
   return selectedCharacter.image;
 }
-
-
 
 
 export { get1RandomCharacter, get10RandomCharacters, getRandomCharacterImage };
