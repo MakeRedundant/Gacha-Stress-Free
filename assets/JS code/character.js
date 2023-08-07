@@ -1,3 +1,7 @@
+import { clearCharacterContainer } from './animation.js';
+
+
+
 const characters = [
   {
     name: "Bocchi",
@@ -83,7 +87,7 @@ const characters = [
   {
     name: "Rin Toshaka",
     series: "Fate",
-    image: "./assets/Images/characters/Rarity 2/Rin_toshaka_2",
+    image: "./assets/Images/characters/Rarity 2/Rin_toshaka_2.jpg",
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 2,
@@ -91,7 +95,7 @@ const characters = [
   {
     name: "Illya",
     series: "Fate",
-    image: "./assets/Images/characters/Rarity 2/IIlya_1.jpg",
+    image: "./assets/Images/characters/Rarity 1/IIlya_1.jpg",
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 1,
