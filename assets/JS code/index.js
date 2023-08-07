@@ -21,16 +21,18 @@ const skipButton = document.getElementById('skip-button');
 summonButton1.addEventListener('click', () => {
   console.log("Clicked Summon-1");
   // Clear the character container and then play the summon animation to get 1 random character
+  saveCharactersLStorage();
   clearCharacterContainer();
   playSummonAnimation(get1RandomCharacter);
-  saveCharactersLStorage();
+ 
 });
 
 // Event listener for Summon 10 button
 summonButton10.addEventListener('click', () => {
   console.log("Clicked Summon-10");
   // Clear the character container and then play the summon animation to get 10 random characters
+  saveCharactersLStorage();
   clearCharacterContainer();
   playSummonAnimation(get10RandomCharacters);
-  saveCharactersLStorage();
+  
 });

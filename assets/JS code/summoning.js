@@ -22,4 +22,4 @@ function saveCharactersLStorage() {
     characterContainer.innerHTML = '';
   }
   
-  export { clearCharacterContainer, saveCharactersLStorage };
+  export { clearCharacterContainer, saveCharactersLStorage, };
