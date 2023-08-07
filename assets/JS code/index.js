@@ -8,7 +8,8 @@
 
 import { get1RandomCharacter, get10RandomCharacters, getRandomCharacterImage } from './character.js';
 // import { summonAnimations, playSummonAnimation, getRandomSummonAnimation } from './animation.js';
-import { playSummonAnimation, clearCharacterContainer } from './animation.js';
+import { playSummonAnimation} from './animation.js';
+import { clearCharacterContainer, saveCharactersLStorage } from './summoning.js';
 // import { saveSummonedCharacters, displaySummonedCharacters } from './history.js';
 
 const summonButton1 = document.getElementById('summon-button-1');
@@ -22,6 +23,7 @@ summonButton1.addEventListener('click', () => {
   // Clear the character container and then play the summon animation to get 1 random character
   clearCharacterContainer();
   playSummonAnimation(get1RandomCharacter);
+  saveCharactersLStorage();
 });
 
 // Event listener for Summon 10 button
@@ -30,4 +32,5 @@ summonButton10.addEventListener('click', () => {
   // Clear the character container and then play the summon animation to get 10 random characters
   clearCharacterContainer();
   playSummonAnimation(get10RandomCharacters);
+  saveCharactersLStorage();
 });
