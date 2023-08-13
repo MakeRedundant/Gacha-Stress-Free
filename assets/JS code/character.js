@@ -238,7 +238,7 @@ const characters = [
   {
     name: "Kokkoro",
     series: "Princess Connect",
-    image: "./assets/Images/characters/Rarity 2/Kokkoro_1.jpg",
+    image: "./assets/Images/characters/Rarity 2/kokkoro_1.jpg",
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 2,
@@ -246,7 +246,7 @@ const characters = [
   {
     name: "Kokkoro (adult)",
     series: "Princess Connect",
-    image: "./assets/Images/characters/Rarity 3/Kokkoro_adult.jpg",
+    image: "./assets/Images/characters/Rarity 3/kokkoro_adult.jpg",
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 3,
@@ -365,6 +365,14 @@ const characters = [
     description: "This is the description of Character 1.",
     rarity: 1,
   },
+  {
+    name: "Chika",
+    series: "Love is war",
+    image: "./assets/Images/characters/Rarity 2/Chika_1.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 2,
+  }, 
   {
     name: "Kaguya + Chika",
     series: "Love is war",
