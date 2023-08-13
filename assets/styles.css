@@ -1,41 +1,54 @@
 #summon-animation {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover; /* Ensures the video covers the entire container */
-    z-index: 999;
-  }
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover; /* Ensures the video covers the entire container */
+  z-index: 999;
+}
 
-  #skip-button {
-    position: absolute;
-    display: none;
-    top: 10px;
-    right: 10px;
-    z-index: 9999; /* Set the z-index to a higher value than the summon animation */
-    
-  }
-  
-  #character-container {
-    position: relative;
-    z-index: -1;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+#skip-button {
+  position: absolute;
+  display: none;
+  top: 10px;
+  right: 10px;
+  z-index: 9999; /* Set the z-index to a higher value than the summon animation */
+}
 
-  #summon-container {
-    
-    z-index: -99;
-  }
+#character-container {
+  position: relative;
+  z-index: -1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+#summon-container {
+  z-index: -99;
+}
 
-  /* Media query for smaller screens (e.g., mobile devices) */
+.character-card {
+  width: 300px;
+  height: 500px;
+  display: inline-block; /* Keeps cards in a row */
+  margin: 10px;
+}
+
+.character-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  display: block; /* Center the image */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
 @media (max-width: 768px) {
-    #summon-animation {
-      width: 100vw; /* Use 'vw' units to cover the full viewport width */
-      height: 100vh; /* Use 'vh' units to cover the full viewport height */
-    }
+  #summon-animation {
+    width: 100vw; /* Use 'vw' units to cover the full viewport width */
+    height: 100vh; /* Use 'vh' units to cover the full viewport height */
   }
+}

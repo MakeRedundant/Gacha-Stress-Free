@@ -516,8 +516,6 @@ function get1RandomCharacter() {
   characterImage.className = "character-image";
   characterImage.src = getRandomCharacterImage();
   characterImage.alt = "Character Image";
-  characterImage.width = 512;
-  characterImage.height = 768;
 
   characterCard.appendChild(characterImage);
   characterContainer.appendChild(characterCard);
