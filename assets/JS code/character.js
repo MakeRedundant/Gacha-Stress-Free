@@ -1,7 +1,6 @@
 import { clearCharacterContainer } from './summoning.js';
 
 
-
 const characters = [
   {
     name: "Bocchi",
@@ -508,8 +507,7 @@ const characters = [
 
 const characterContainer = document.getElementById("character-container");
 
-//Function that fetches 1 Random Character
-
+// Function to fetch 1 Random Character and create a character card
 function get1RandomCharacter() {
   const characterCard = document.createElement("div");
   characterCard.className = "character-card";
@@ -518,12 +516,14 @@ function get1RandomCharacter() {
   characterImage.className = "character-image";
   characterImage.src = getRandomCharacterImage();
   characterImage.alt = "Character Image";
+  characterImage.width = 512;
+  characterImage.height = 768;
 
   characterCard.appendChild(characterImage);
   characterContainer.appendChild(characterCard);
 }
-//Function that fetches 10 Random Character
 
+// Function to fetch 10 Random Characters and create character cards
 function get10RandomCharacters() {
   const numberOfCharacters = 10;
 
@@ -535,11 +535,14 @@ function get10RandomCharacters() {
     characterImage.className = "character-image";
     characterImage.src = getRandomCharacterImage();
     characterImage.alt = "Character Image";
+    characterImage.width = 300;
+    characterImage.height = 550;
 
     characterCard.appendChild(characterImage);
     characterContainer.appendChild(characterCard);
   }
 }
+
 
 function getRandomCharacterImage() {
   const randomValue = Math.random();
