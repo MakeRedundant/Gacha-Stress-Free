@@ -230,7 +230,7 @@ const characters = [
   {
     name: "Kyaru",
     series: "Princess Connect",
-    image: "./assets/Images/characters/Rarity 2/Kyaru.jpg",
+    image: "./assets/Images/characters/Rarity 2/kyaru.jpg",
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 2,
