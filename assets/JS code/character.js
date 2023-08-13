@@ -543,6 +543,7 @@ function get10RandomCharacters() {
     characterImage.alt = "Character Image";
     characterImage.width = 300;
     characterImage.height = 550;
+    characterImage.loading = 'lazy'; // Set the loading attribute to "lazy"
 
     characterCard.appendChild(characterImage);
     characterContainer.appendChild(characterCard);
