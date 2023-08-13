@@ -27,12 +27,42 @@ summonButton1.addEventListener('click', () => {
  
 });
 
+// // Event listener for Summon 10 button
+// summonButton10.addEventListener('click', () => {
+//   console.log("Clicked Summon-10");
+//   // Clear the character container and then play the summon animation to get 10 random characters
+//   saveCharactersLStorage();
+//   clearCharacterContainer();
+//   playSummonAnimation(get10RandomCharacters);
+  
+// });
+
 // Event listener for Summon 10 button
 summonButton10.addEventListener('click', () => {
   console.log("Clicked Summon-10");
-  // Clear the character container and then play the summon animation to get 10 random characters
+  // Clear the character container, local storage, and then play the summon animation to get 10 random characters
   saveCharactersLStorage();
   clearCharacterContainer();
-  playSummonAnimation(get10RandomCharacters);
-  
+  playSummonAnimationWithPreload(get10RandomCharacters);
 });
+
+// Function to play the summon animation and preload character images
+function playSummonAnimationWithPreload(callback) {
+  // Play the summon animation and get the summoned characters
+  playSummonAnimation(() => {
+    const charactersToPreload = callback();
+    preloadCharacterImages(charactersToPreload);
+    saveCharactersLStorage();
+    clearCharacterContainer(); // Clear the container after the animation is done
+  }, callback);
+}
+
+// Function to preload character images
+function preloadCharacterImages(charactersToPreload) {
+  charactersToPreload.forEach(character => {
+    const image = new Image();
+    image.src = character.image;
+  });
+}
+
+// The rest of your code
