@@ -140,6 +140,14 @@ const characters = [
     rarity: 1,
   },
   {
+    name: "Saber",
+    series: "Fate Grand Order",
+    image: "./assets/Images/characters/Rarity 2/Saber.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 2,
+  },
+  {
     name: "Saber (food)",
     series: "Fate Grand Order",
     image: "./assets/Images/characters/Rarity 1/Saber_food.jpg",
@@ -259,7 +267,6 @@ const characters = [
     description: "This is the description of Character 1.",
     rarity: 1,
   },
-
   {
     name: "Cynthia_chibi",
     series: "Pokemon",
@@ -268,7 +275,6 @@ const characters = [
     description: "This is the description of Character 1.",
     rarity: 1,
   },
-
   {
     name: "Rena Hyugga",
     series: "Higurashi",
@@ -321,6 +327,30 @@ const characters = [
     name: "Chisato",
     series: "Lycoris Recoil",
     image: "./assets/Images/characters/Rarity 2/Chisato_1.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 2,
+  },
+  {
+    name: "Lenneth",
+    series: "Valkyrie Profile",
+    image: "./assets/Images/characters/Rarity 2/Lenneth.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 2,
+  },
+  {
+    name: "Mitsuri",
+    series: "Demon Slayer",
+    image: "./assets/Images/characters/Rarity 2/Mitsuri.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 2,
+  },
+  {
+    name: "Rem (Steampunk)",
+    series: "ReZero",
+    image: "./assets/Images/characters/Rarity 2/Rem_steampunk.jpg",
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 2,
