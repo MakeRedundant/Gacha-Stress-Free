@@ -366,7 +366,7 @@ const characters = [
   {
     name: "Rem (Kimino)",
     series: "ReZero",
-    image: "./assets/Images/characters/Rarity 2/Rem_kimino.jpg",
+    image: "./assets/Images/characters/Rarity 1/Rem_kimino.jpg",
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 1,
@@ -583,14 +583,6 @@ const characters = [
     name: "Pharoah",
     series: "Original AI",
     image: "./assets/Images/characters/Rarity 1/original_6.jpg",
-    gender: "F",
-    description: "This is the description of Character 1.",
-    rarity: 1,
-  },
-  {
-    name: "Witch",
-    series: "Original AI",
-    image: "./assets/Images/characters/Rarity 1/original_7.jpg",
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 1,
