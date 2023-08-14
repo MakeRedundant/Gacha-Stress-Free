@@ -366,7 +366,7 @@ const characters = [
   {
     name: "Rem (Kimino)",
     series: "ReZero",
-    image: "./assets/Images/characters/Rarity 2/Rem_kimino.jpg",
+    image: "./assets/Images/characters/Rarity 1/Rem_kimino.jpg",
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 1,
