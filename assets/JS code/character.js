@@ -372,7 +372,7 @@ const characters = [
     rarity: 1,
   },
   {
-    name: "Rem + Ram",
+    name: "Rem & Ram",
     series: "ReZero",
     image: "./assets/Images/characters/Rarity 3/Rem_Ram.jpg",
     gender: "F",
