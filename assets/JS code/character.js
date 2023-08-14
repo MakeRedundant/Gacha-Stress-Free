@@ -1,5 +1,4 @@
-import { clearCharacterContainer } from './summoning.js';
-
+import { clearCharacterContainer } from "./summoning.js";
 
 const characters = [
   {
@@ -196,6 +195,14 @@ const characters = [
     rarity: 1,
   },
   {
+    name: "Shuten Douji",
+    series: "Fate Grand Order",
+    image: "./assets/Images/characters/Rarity 1/Shuten_Douji.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
     name: "Saber (Chibi)",
     series: "Fate Grand Order",
     image: "./assets/Images/characters/Rarity 1/Saber_chibi.jpg",
@@ -348,9 +355,49 @@ const characters = [
     rarity: 2,
   },
   {
+    name: "Aqua (Pjs)",
+    series: "Konosuba",
+    image: "./assets/Images/characters/Rarity 1/Aqua (Pjs).jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Megumin",
+    series: "Konosuba",
+    image: "./assets/Images/characters/Rarity 1/Megumin_1.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Megumin (School)",
+    series: "Konosuba",
+    image: "./assets/Images/characters/Rarity 2/Megumin_2.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 2,
+  },
+  {
     name: "Mitsuri",
     series: "Demon Slayer",
     image: "./assets/Images/characters/Rarity 2/Mitsuri.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 2,
+  },
+  {
+    name: "Emilia",
+    series: "ReZero",
+    image: "./assets/Images/characters/Rarity 2/Emilia_1.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 2,
+  },
+  {
+    name: "Echidna",
+    series: "ReZero",
+    image: "./assets/Images/characters/Rarity 2/Echidna_1.jpg",
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 2,
@@ -375,6 +422,14 @@ const characters = [
     name: "Rem & Ram",
     series: "ReZero",
     image: "./assets/Images/characters/Rarity 3/Rem_Ram.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 3,
+  },
+  {
+    name: "Rem (Angel)",
+    series: "ReZero",
+    image: "./assets/Images/characters/Rarity 3/Rem (angel).jpg",
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 3,
@@ -428,13 +483,21 @@ const characters = [
     rarity: 1,
   },
   {
+    name: "Marin Kitagawa",
+    series: "Dress up Darling",
+    image: "./assets/Images/characters/Rarity 2/Marin_Kitagawa.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 2,
+  },
+  {
     name: "Chika",
     series: "Love is war",
     image: "./assets/Images/characters/Rarity 2/Chika_1.jpg",
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 2,
-  }, 
+  },
   {
     name: "Kaguya + Chika",
     series: "Love is war",
@@ -442,7 +505,7 @@ const characters = [
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 3,
-  }, 
+  },
   {
     name: "Hoshino",
     series: "Blue Archive",
@@ -506,6 +569,14 @@ const characters = [
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 3,
+  },
+  {
+    name: "Anis",
+    series: "Nikke",
+    image: "./assets/Images/characters/Rarity 1/Anis.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
   },
   {
     name: "Helm",
@@ -588,9 +659,25 @@ const characters = [
     rarity: 1,
   },
   {
+    name: "Witch",
+    series: "Original AI",
+    image: "./assets/Images/characters/Rarity 1/original_7.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
     name: "Kimino",
     series: "Original AI",
     image: "./assets/Images/characters/Rarity 1/original_8.jpg",
+    gender: "F",
+    description: "This is the description of Character 1.",
+    rarity: 1,
+  },
+  {
+    name: "Art",
+    series: "Original AI",
+    image: "./assets/Images/characters/Rarity 1/original_9.jpg",
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 1,
@@ -629,13 +716,12 @@ function get10RandomCharacters() {
     characterImage.alt = "Character Image";
     characterImage.width = 300;
     characterImage.height = 550;
-    characterImage.loading = 'lazy'; // Set the loading attribute to "lazy"
+    characterImage.loading = "lazy"; // Set the loading attribute to "lazy"
 
     characterCard.appendChild(characterImage);
     characterContainer.appendChild(characterCard);
   }
 }
-
 
 function getRandomCharacterImage() {
   const randomValue = Math.random();
@@ -649,17 +735,23 @@ function getRandomCharacterImage() {
     selectedRarity = 3; // 9% chance
   }
 
-  const charactersOfSelectedRarity = characters.filter(character => character.rarity === selectedRarity);
+  const charactersOfSelectedRarity = characters.filter(
+    (character) => character.rarity === selectedRarity
+  );
 
-  const randomIndex = Math.floor(Math.random() * charactersOfSelectedRarity.length);
+  const randomIndex = Math.floor(
+    Math.random() * charactersOfSelectedRarity.length
+  );
   const selectedCharacter = charactersOfSelectedRarity[randomIndex];
 
   if (!selectedCharacter || !selectedCharacter.image) {
     console.log("Selected character or image is undefined");
-    return ""; 
+    return "";
   }
 
-  console.log(`Summoned character: ${selectedCharacter.name} (Rarity ${selectedCharacter.rarity})`);
+  console.log(
+    `Summoned character: ${selectedCharacter.name} (Rarity ${selectedCharacter.rarity})`
+  );
   return selectedCharacter.image;
 }
 
@@ -667,19 +759,16 @@ function getRandomCharacterImage() {
 function addToCharacterHistory(character) {
   const characterHistory = getCharacterHistory();
   characterHistory.push(character);
-  localStorage.setItem('characterHistory', JSON.stringify(characterHistory));
+  localStorage.setItem("characterHistory", JSON.stringify(characterHistory));
 }
 
 // Function to get the character history from local storage
 function getCharacterHistory() {
-  const characterHistoryJSON = localStorage.getItem('characterHistory');
+  const characterHistoryJSON = localStorage.getItem("characterHistory");
   return characterHistoryJSON ? JSON.parse(characterHistoryJSON) : [];
 }
 
-
-
-
-export { addToCharacterHistory, getCharacterHistory};
+export { addToCharacterHistory, getCharacterHistory };
 
 export { get1RandomCharacter, get10RandomCharacters, getRandomCharacterImage };
 export default characters;
