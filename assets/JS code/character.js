@@ -590,7 +590,7 @@ const characters = [
   {
     name: "Witch",
     series: "Original AI",
-    image: "./assets/Images/characters/Rarity 1/original_7.jpg",
+    image: "./assets/Images/characters/Rarity 1/Original_7.jpg",
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 1,
