@@ -357,7 +357,7 @@ const characters = [
   {
     name: "Aqua (Pjs)",
     series: "Konosuba",
-    image: "./assets/Images/characters/Rarity 1/Aqua (Pjs).jpg",
+    image: "./assets/Images/characters/Rarity 1/Aqua_(PJs).jpg",
     gender: "F",
     description: "This is the description of Character 1.",
     rarity: 1,
