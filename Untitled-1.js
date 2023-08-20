@@ -25,12 +25,14 @@ function playSummonAnimation(callback) {
 
   summonAnimations.src = animationPath;
   summonAnimations.style.display = "block"; // Show the video element
-  summonAnimations.play();
-
-  console.log(`Playing animation: ${animationFile}`); // Log the animation being played
 
   summonAnimations.addEventListener("play", () => {
     if (skipButton) skipButton.style.display = "block"; // Show the "Skip" button during the summon animation
+
+    // Preload the next animation while the current one is playing
+    const nextAnimationFile = getRandomSummonAnimation();
+    const nextAnimationPath = `./assets/Summon/${nextAnimationFile}`;
+    const nextAnimation = new Audio(nextAnimationPath);
   });
 
   function skipAnimation() {
@@ -49,6 +51,8 @@ function playSummonAnimation(callback) {
     skipButton.style.display = "none"; // Hide the "Skip" button after the summon animation.
     callback(); // Invoke the callback function after animation finishes
   });
+
+  summonAnimations.play(); // Start playing the current animation
 }
 
 // // Function to save the summoned characters to local storage
