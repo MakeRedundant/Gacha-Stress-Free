@@ -227,7 +227,7 @@ const characters = [
     rarity: 3,
   },
   {
-    name: " Ishtar (Casual)",
+    name: "Ishtar (Casual)",
     series: "Fate Grand Order",
     image: "./assets/Images/characters/Rarity 2/Ishtar.jpg",
     gender: "F",
@@ -235,7 +235,7 @@ const characters = [
     rarity: 2,
   },
   {
-    name: " Ishtar + Eresh ",
+    name: "Ishtar + Eresh ",
     series: "Fate Grand Order",
     image: "./assets/Images/characters/Rarity 3/Ishtar_Eresh.jpg",
     gender: "F",

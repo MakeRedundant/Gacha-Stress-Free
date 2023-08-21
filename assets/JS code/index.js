@@ -12,6 +12,7 @@ import {
 } from "./character.js";
 // import { summonAnimations, playSummonAnimation, getRandomSummonAnimation } from './animation.js';
 import { playSummonAnimation } from "./animation.js";
+
 import {
   clearCharacterContainer,
   saveCharactersLStorage,
