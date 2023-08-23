@@ -35,7 +35,6 @@
 // preloadSummonAnimations();
 
 
-// Preload summon animations
 const preloadSummonAnimations = () => {
   const summonAnimations = [
     "FGO.mp4",
@@ -47,13 +46,23 @@ const preloadSummonAnimations = () => {
     // Add more summon animations
   ];
 
-  const cacheBuster = Date.now(); // Generate a cache-busting value
-
   summonAnimations.forEach(animationFile => {
     const video = document.createElement("video");
-    video.src = `./assets/Summon/${animationFile}?${cacheBuster}`; // Append cache-buster query parameter
+    video.src = `./assets/Summon/${animationFile}`;
+
     video.preload = "auto"; // Preload the video
     video.style.display = "none"; // Hide the video element
+
+    video.addEventListener("loadeddata", () => {
+      // Video loaded successfully
+      console.log(`Video preloaded: ${animationFile}`);
+    });
+
+    video.addEventListener("error", () => {
+      // Video loading failed
+      console.error(`Error loading video: ${animationFile}`);
+    });
+
     document.body.appendChild(video); // Append to body to trigger preload
   });
 
