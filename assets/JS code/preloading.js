@@ -1,40 +1,3 @@
-// // Preload summon animations
-// const preloadSummonAnimations = () => {
-//   const summonAnimations = [
-//     "FGO.mp4",
-//     "Nikke.mp4",
-//     "Blue Archive.mp4",
-//     "Genshin Impact.mp4",
-//     "Grand Blue Fantasy.mp4",
-//     "Honkai Star Rail.mp4"
-//     // Add more summon animations
-//   ];
-
-//   let videosLoaded = 0;
-
-//   summonAnimations.forEach(animation => {
-//     const video = document.createElement("video");
-//     video.src = `./assets/Summon/${animation}`;
-//     video.preload = "auto"; // Preload the video
-//     video.style.display = "none"; // Hide the video element
-//     video.addEventListener("loadeddata", () => {
-//       videosLoaded++;
-//       if (videosLoaded === summonAnimations.length) {
-//         // All videos are preloaded, hide the loading container
-//         const loadingContainer = document.querySelector(".loading-container");
-//         loadingContainer.style.display = "none";
-//       }
-//     });
-//     document.body.appendChild(video); // Append to body to trigger preload
-//   });
-
-//   console.log("Summon animations preloaded.");
-// };
-
-// // Call the function to start preloading summon animations
-// preloadSummonAnimations();
-
-
 const preloadSummonAnimations = () => {
   const summonAnimations = [
     "FGO.mp4",
@@ -43,15 +6,15 @@ const preloadSummonAnimations = () => {
     "Genshin Impact.mp4",
     "Grand Blue Fantasy.mp4",
     "Honkai Star Rail.mp4",
-    // Add more summon animations
+    // Add Princess Connect?? Arknights etc 
   ];
-
-  summonAnimations.forEach(animationFile => {
+//None of this is working
+  summonAnimations.forEach(animationFile => { 
     const video = document.createElement("video");
     video.src = `./assets/Summon/${animationFile}`;
 
     video.preload = "auto"; // Preload the video
-    video.style.display = "none"; // Hide the video element
+    video.style.display = "none"; 
 
     video.addEventListener("loadeddata", () => {
       // Video loaded successfully
